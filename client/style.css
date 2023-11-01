@@ -1,4 +1,16 @@
 
+#myMapID {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .location-found {
     display: flex;
@@ -14,12 +26,19 @@
 
 .vertical-slider {
     width: 500px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 50%;
+    right: -200px;
+    z-index: 2;
+    transform: rotate(270deg);
 }
 
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
+    background-color: transparent;
 }
 
 input[type="range"]:focus {
