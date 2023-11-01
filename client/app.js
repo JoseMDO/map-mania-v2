@@ -39,7 +39,7 @@ async function initMap() {
 
     function moveSlider(difference) {
         const slider = document.getElementById("myRange");
-        slider.value = difference
+        slider.value = -difference
     }
 
 
