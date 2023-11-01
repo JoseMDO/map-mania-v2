@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Map Mania</title>
 
 </head>
 <body>
-    <h1>Map Mania V2.0</h1>
+    <!-- <h1>Map Mania V2.0</h1> -->
+
+    <div class="location-found" id="location-found">
+        Congrats, you found a location!
+    </div>
+
+    <div class="modal" id="modal">
+
+        <div class="finish-game" id="finish-game">
+            <i class="fa-regular fa-circle-question icon"></i>
+        </div>
+
+        <div class="end-game-modal" id="end-game-modal">
+            <div class="close-end-game" id="close-end-game">
+                <i class="fa-solid fa-xmark close-box"></i>
+            </div>
+            
+            <p>
+                Are you sure you want to end the game? 
+                You will recieve a score of 0 and all of the locations will appear on the map.
+            </p>
+            <button class="forfeit" id="forfeit">
+                Yes, I forfeit
+            </button>
+        </div>
+
+        <h1 class="game-title">
+            Map Mania!
+        </h1>
+
+        <p class="game-intro">
+            Hello, Welcome to Map Mania! This is a game where you will try and find ten of my favorite locations 
+            around the world! The less clicks it takes you to find the locations, the higher your score! Every time you click, a marker will be placed.
+            If you found the location, you will be notified and the location will show up on the map for the rest of the game. 
+            I have a slider that will give you some hints if you are getting hotter or colder, remember, the closer you zoom in,
+            the better your chances are of finding it! Best of luck and lets see how well you know me!
+        </p>
+
+        <button class="start-button" id="start">
+            Start Game
+        </button>
+    </div>
 
     <div class="vertical-slider">
         <input type="range" min="-100" max="0" value="-50" class="slider" id="myRange" orient="vertical">
@@ -18,6 +60,8 @@
         <h1>Congrats</h1>
     </div>
      -->
+
+
     <div id="myMapID">
 
     </div>

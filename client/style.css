@@ -8,20 +8,87 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background: rgb(189, 199, 201);
+    width: 50%;
+    height: 30%;
+    top: 30%;
+    left: 25%;
+    max-width: 1000px;
+    border-radius: 100px;
+    padding: 20px;
+    border: 10px solid black;
+    overflow: auto;
+    font-weight: 700;
+}
+
+.end-game-modal {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px solid red;
+}
+
+.close-end-game {
+    align-self: flex-end;
+}
+.close-box {
+    cursor: pointer;
 }
 
 
+.finish-game {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 100px;
+    width: 90%;
+}
+
+.icon:hover {
+    animation: bounce 1s infinite; 
+    -webkit-animation: bounce 1s infinite; 
+    -moz-animation: bounce 1s infinite;
+    cursor: pointer;
+ }
+
+.game-title {
+    display: flex;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
 
 .location-found {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgb(189, 199, 201);
+    border: 5px solid black;
+    border-radius: 20px;
     color: black;
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    height: 10%;
     position: absolute;
+    top: 40%;
+    left: 40%;
     z-index: 1000;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .vertical-slider {
@@ -79,4 +146,45 @@ input[type="range"]::-moz-range-thumb {
     border: 5px solid black;
     margin-top: -5px;
     border-radius: 50%;
+}
+
+
+
+
+
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+       -webkit-transform: translateY(0);
+    } 
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {
+       -moz-transform: translateY(0);
+    }
+    50% {
+       -moz-transform: translateY(-5px);
+    }
+}
+@-o-keyframes bounce {
+    0%,
+    100% {
+       -o-transform: translateY(0);
+    }
+    50% {
+       -o-transform: translateY(-5px);
+    }
+}
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
