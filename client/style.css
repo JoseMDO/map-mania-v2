@@ -1,0 +1,13 @@
+
+
+.location-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: black;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 1000;
+}
