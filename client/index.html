@@ -30,7 +30,7 @@
                 Are you sure you want to end the game? 
                 You will recieve a score of 0 and all of the locations will appear on the map.
             </p>
-            <button class="forfeit" id="forfeit">
+            <button class="button" id="forfeit">
                 Yes, I forfeit
             </button>
         </div>
@@ -44,17 +44,40 @@
             around the world! The less clicks it takes you to find the locations, the higher your score! Every time you click, a marker will be placed.
             If you found the location, you will be notified and the location will show up on the map for the rest of the game. 
             I have a slider that will give you some hints if you are getting hotter or colder, remember, the closer you zoom in,
-            the better your chances are of finding it! Best of luck and lets see how well you know me!
+            the better your chances are of finding it! If you click the question mark in the corner, you have
+            the option to end the game early and see all the locations. Best of luck and lets see how well you know me! 
         </p>
 
-        <button class="start-button" id="start">
+        <button class="button" id="start">
             Start Game
         </button>
+
+    </div>
+
+    <div class="finished-game-modal" id="finished-game-modal">
+        <p class="final-score" id="final-score">
+            Congratulations! You finished the game with a score of: 0
+        </p>
+
+        <button class="button" id="restart-button">
+            Restart Game
+        </button>
+    </div>
+
+    <div class="modal-button-container" id="modal-button-container">
+        <i class="fa-solid fa-house icon"></i>
+    </div>
+
+    <div class="score-container" id="score-container">
+        <p class="score" id="score">Current Score: 0</p>
     </div>
 
     <div class="vertical-slider">
         <input type="range" min="-100" max="0" value="-50" class="slider" id="myRange" orient="vertical">
     </div>
+
+
+
 
     <!-- <div class="location-found">
         <h1>Congrats</h1>
