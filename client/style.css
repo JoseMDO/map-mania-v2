@@ -31,6 +31,13 @@ html, body {
     font-weight: 700;
 }
 
+.modal-button-container {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: 20px;
+}
+
 .end-game-modal {
     position: absolute;
     display: none;
@@ -58,6 +65,41 @@ html, body {
     width: 90%;
 }
 
+.score-container {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    display: flex;
+    z-index: 1;
+    background: rgb(189, 199, 201);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.finished-game-modal {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(189, 199, 201);
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+    font-weight: 700;
+}
+
+.button {
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .icon:hover {
     animation: bounce 1s infinite; 
     -webkit-animation: bounce 1s infinite; 
@@ -82,12 +124,12 @@ html, body {
     border-radius: 20px;
     color: black;
     width: 20%;
+    min-width: 150px;
     height: 10%;
     position: absolute;
     top: 40%;
     left: 40%;
     z-index: 1000;
-    font-size: 1.2rem;
     font-weight: 700;
 }
 
